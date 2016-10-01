@@ -22,13 +22,10 @@ gulp.task('watch', function() {
     
     // List all the files that I want to watch
     var files = [
-        'app/**/*.html',
-        'app/templates/*.html',
-        'app/stylesheets/**/*.css',
+        'app/html/*.html',
+        'app/css/*.css',
         'app/images/**/*{.png, .jpeg, .jpg}',
-        'app/scripts/*.php',
-        'app/js/*.js',
-        'app/js/**/*.js'
+        'app/js/*.js'
     ]
     
     // Connect to PHP server
