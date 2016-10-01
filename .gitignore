@@ -1,0 +1,7 @@
+# Ignore Vagrant
+Vagrantfile
+.vagrant/
+
+# Ignore Node Modules & Bower Components
+node_modules/
+bower_components/
