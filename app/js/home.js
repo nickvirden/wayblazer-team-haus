@@ -1,5 +1,7 @@
 $(function() {
     
+    $(".button-collapse").sideNav();
+    
     var term = {
     "async": true,
     "crossDomain": true,
