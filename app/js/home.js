@@ -1,6 +1,10 @@
 $(function() {
     
-    $(".button-collapse").sideNav();
+  function hotels(data){
+    return JSON.parse(data);
+  }
+    
+  $(".button-collapse").sideNav();
 
   var headers = { 
      'cache-control': 'no-cache',
@@ -15,7 +19,7 @@ $(function() {
     }).done(function(data){
       $.typeahead({
         input: ".js-typeahead-country_v1",
-        order: "desc",
+        order: "asc",
         source: {
           data: data
         }
@@ -23,8 +27,21 @@ $(function() {
     })
   })
 
+  $('.btn').on('click', function(e){
+    localStorage.clear();
+    e.preventDefault();
+    var input = $('.js-typeahead-country_v1').val();
+    input = input.split(',')[0].toLowerCase()
+    $.ajax({
+        url: "https://api.wayblazer.com/v1/destinations/detail?destination=place:" + input,
+        headers: headers
+    }).done(function(data){
+        localStorage.setItem('data', JSON.stringify(data));
+        window.location.href = 'results.html';
+    })
+  })
 
+  var obj = hotels(localStorage.getItem('data'));
 
- 
     
 });
