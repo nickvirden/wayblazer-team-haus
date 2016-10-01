@@ -8,42 +8,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--Mobile Optimized-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
+
     <title>Hotel Split</title>
-    
+
     <!--Materialize UI-->
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+
     <!-- MaterializeCSS -->
     <link href="../bower_components/materialize/dist/css/materialize.min.css" rel="stylesheet">
-        
+
     <!--Bootstrap Social & Font Awesome -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="../bower_components/jquery-typeahead/dist/jquery.typeahead.min.css">
     <!-- Proprietary Styling -->
     <link href="css/home.css" rel="stylesheet">
-    
+
     <!-- EmojiOne -->
     <link href="//cdn.jsdelivr.net/emojione/2.2.6/assets/css/emojione.min.css"/ rel="stylesheet">
 
 </head>
 
 <body>
-    
+
     <nav>
         <div class="nav-wrapper">
             <a href="#!" class="brand-logo">Logo</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            
+
             <ul class="right hide-on-med-and-down">
                 <li><a href="sass.html">Sass</a></li>
                 <li><a href="badges.html">Components</a></li>
                 <li><a href="collapsible.html">Javascript</a></li>
                 <li><a href="mobile.html">Mobile</a></li>
             </ul>
-            
+
             <ul class="side-nav" id="mobile-demo">
                 <li><a href="sass.html">Sass</a></li>
                 <li><a href="badges.html">Components</a></li>
@@ -52,27 +52,46 @@
             </ul>
         </div>
     </nav>
-    
-    
-    
-    
-    
+
+
+
+
+
     <div class="row">
         <nav class="col s6 push-s3">
             <div class="nav-wrapper">
-              <form>
+
+
+              <form id="form-country_v1" name="form-country_v1">
+                <div class="typeahead__container">
+                    <div class="typeahead__field">
+
+                        <span class="typeahead__query">
+                            <input class="js-typeahead-country_v1" name="country_v1[query]" type="search" placeholder="Search" autocomplete="off">
+                        </span>
+                        <span class="typeahead__button">
+                            <button type="submit">
+                                <i class="typeahead__search-icon"></i>
+                            </button>
+                        </span>
+
+                    </div>
+                </div>
+              </form>
+
+              <!-- <form>
                 <div class="input-field">
-                  <input id="search" type="search" required>
+                  <input id="autocomplete-input" class="autocomplete" type="search" required>
                   <label for="search"><i class="material-icons">search</i></label>
                   <i class="material-icons">close</i>
                 </div>
-              </form>
+              </form> -->
             </div>
         </nav>
     </div>
 
-    
-    
+
+
      <footer class="page-footer">
           <div class="container">
             <div class="row">
@@ -97,26 +116,27 @@
             </div>
           </div>
         </footer>
-    
-    
-    
-    
-      
+
+
+
+
+
     <!-- jQuery -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-     
+    <script src="../bower_components/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
+
     <!-- Custom JS files -->
     <!-- These should ALWAYS come after your downloaded packages -->
     <script src="js/home.js"></script>
-   
+
     <!-- Materialize JS & jQuery -->
     <script src="../bower_components/materialize/dist/js/materialize.min.js"></script>
     <script src="../bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="../bower_components/jquery-validation/dist/additional-methods.min.js"></script>
-    
+
     <!-- Emoji One -->
     <script src="//cdn.jsdelivr.net/emojione/2.2.6/lib/js/emojione.min.js"></script>
-    
+
     <!--One Page Scroll-->
     <!--script src="https://kswedberg.github.io/jquery-smooth-scroll/lib/jquery/jquery.js"></script>
     <script src="<script src="https://kswedberg.github.io/jquery-smooth-scroll/src/jquery.smooth-scroll.js"></script-->
