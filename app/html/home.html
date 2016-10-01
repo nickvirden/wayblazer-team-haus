@@ -32,6 +32,46 @@
 
 <body>
     
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+            </ul>
+            
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    
+    
+    
+    <div class="row">
+        <nav class="col s6 push-s3">
+            <div class="nav-wrapper">
+              <form>
+                <div class="input-field">
+                  <input id="search" type="search" required>
+                  <label for="search"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                </div>
+              </form>
+            </div>
+        </nav>
+    </div>
+
+    
     
      <footer class="page-footer">
           <div class="container">
@@ -43,18 +83,17 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Looking for Something?</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Who We Are</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Our Office</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            © 2016 Hotel Split
             </div>
           </div>
         </footer>
@@ -64,16 +103,16 @@
     
       
     <!-- jQuery -->
-    <script src="js/components/jquery.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.jsjquery.min.js"></script>
      
     <!-- Custom JS files -->
     <!-- These should ALWAYS come after your downloaded packages -->
     <script src="js/home.js"></script>
    
     <!-- Materialize JS & jQuery -->
-    <script src="js/components/materialize.min.js"></script>
-    <script src="js/components/jquery.validate.min.js"></script>
-    <script src="js/components/additional-methods.min.js"></script>
+    <script src="/bower_components/materialize/dist/js/materialize.min.jsmaterialize.min.js"></script>
+    <script src="/bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/bower_components/jquery-validation/dist/additional-methods.min.js"></script>
     
     <!-- Emoji One -->
     <script src="//cdn.jsdelivr.net/emojione/2.2.6/lib/js/emojione.min.js"></script>
