@@ -22,7 +22,6 @@
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
     <link rel="stylesheet" href="../bower_components/jquery-typeahead/dist/jquery.typeahead.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Proprietary Styling -->
     <link href="css/home.css" rel="stylesheet">
 
@@ -59,20 +58,82 @@
         <input type="date" class="datepicker">
     </div>
 
-    <div class="col-md-1">
-      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Public</div>
-    <div class="col-md-1">
-      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Invite Only</div>
-    </div>
+      <form action="#">
+      <p class="col s3">
+        <input name="public" type="radio" />
+        <label for="test1">Public</label>
+      </p>
+      <p class="col s3">
+        <input name="invite" type="radio" />
+        <label for="test2">Invite Only</label>
+      </p>
+    </form>
+  </div>
 
   <div class="row" id="roommates">
-      <div class="col-md-1">.col-md-1</div>
-      <div class="col-md-1">.col-md-1</div>
+    <p>Roommate Requirements</p>
+      <p>Age</p>
+      <select class="col s3">
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+      </select>
+    </br>
+      <select class="col s3">
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+      </select>
+
+      <p>Invite Others</p>
+      <input class="col s3" type="button" name="name" value="">
+      <button type="button" name="button">+</button>
+  </div>
+
+
+  <div class="row" id="gender">
+      <p>Gender</p>
+      <select>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+      </select>
   </div>
 
   <div class="row" id="req-list">
-      <div class="col-md-1">.col-md-1</div>
-      <div class="col-md-1">.col-md-1</div>
+    <ul class="col s3">
+      <li><input type="checkbox" id="test5" />
+      <label for="test5">No Smoking</label></li>
+      <li><input type="checkbox" id="test5" />
+      <label for="test5">Doesn't stay up late</label></li>
+      <li><input type="checkbox" id="test5" />
+      <label for="test5">Doesn't get up early</label></li>
+    </ul>
+
+    <ul class="col s3">
+      <li><input type="checkbox" id="test5" />
+      <label for="test5">Single travelers only</label></li>
+      <li><input type="checkbox" id="test5" />
+      <label for="test5">wants to...</label></li>
+      <li><input type="checkbox" id="test5" />
+      <label for="test5">wants to...</label></li>
+    </ul>
+
+    <ul class="col s3">
+      <li><input type="checkbox" id="test5" />
+      <label for="test5">Single travelers only</label></li>
+      <li><input type="checkbox" id="test5" />
+      <label for="test5">wants to...</label></li>
+      <li><input type="checkbox" id="test5" />
+      <label for="test5">wants to...</label></li>
+    </ul>
+  </div>
+
+  <div class="row" id="button">
+    <button type="submit" name="submit">Create Listing</button>
   </div>
 
     <!-- <nav>
