@@ -43,7 +43,7 @@ $(function() {
         });
     })
 
-    $('button').on('click', function(e) {
+    $('#button').on('click', function(e) {
         localStorage.clear();
         e.preventDefault();
         var input = $('.search').val();
