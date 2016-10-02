@@ -41,7 +41,7 @@ $(function() {
                 }
             });
         });
-    })
+    });
 
     $('#button').on('click', function(e) {
         localStorage.clear();
@@ -81,6 +81,7 @@ $(function() {
         $('span.price:eq(0)').text(Math.round(data['accommodation']['lowestRate'] * 100)/100);
         $('.card-reveal:eq(0) p').text(data['accommodation']['summary'])
         $('.card-reveal:eq(0) .address').text(data['accommodation']['attraction']['location']['formattedAddress'])
+        $('span.rating:eq(0)').text(data['accommodation']['attraction']['overallRating'])
     })
 
     $.ajax({
@@ -106,6 +107,9 @@ $(function() {
         $('.card-reveal:eq(1) .address').text(data['accommodation']['attraction']['location']['formattedAddress'])
     })
 
+        $('span.rating:eq(1)').text(data['accommodation']['attraction']['overallRating'])
+    })
+
     $.ajax({
         url: "https://api.wayblazer.com/v1/hotels/" + obj.hotels[6],
         headers: headers,
@@ -127,6 +131,7 @@ $(function() {
         $('span.price:eq(2)').text(Math.round(data['accommodation']['lowestRate'] * 100)/100);
         $('.card-reveal:eq(2) p').text(data['accommodation']['summary'])
         $('.card-reveal:eq(2) .address').text(data['accommodation']['attraction']['location']['formattedAddress'])
+        $('span.rating:eq(2)').text(data['accommodation']['attraction']['overallRating'])
     })
 
 });
