@@ -132,4 +132,73 @@ $(function() {
         $('span.rating:eq(2)').text(data['accommodation']['attraction']['overallRating'])
     })
 
+    $.ajax({
+        url: "https://api.wayblazer.com/v1/hotels/" + obj.hotels[7],
+        headers: headers,
+        data: jQuery.param({
+            adults: 2,
+            children: 0,
+            rooms: 1,
+            startDate: "2016-10-06",
+            endDate: "2016-10-10",
+            hotelProvider: "hotelscombined",
+            concepts: [],
+            getPricing: false
+        })
+    }).done(function(data){
+        $('span.activator:eq(3)').text("Jason | Shared price: $" + Math.round((data['accommodation']['lowestRate'] * 100)/100)/2)
+        $('span.hotel:eq(3)').text(data['accommodation']['hotelId'].split('_').join(' '))
+        $('.card-content:eq(3) p').text(data['accommodation']['summary'].substring(0, length) + ' ...')
+        $('span.price:eq(3)').text(Math.round(data['accommodation']['lowestRate'] * 100)/100);
+        $('.card-reveal:eq(3) img').attr('src', 'https://' + data['accommodation']['images'][2]['urls']['original'])
+        $('.card-reveal:eq(3) .address').text(data['accommodation']['attraction']['location']['formattedAddress'])
+        $('span.rating:eq(3)').text(data['accommodation']['attraction']['overallRating'])
+    }) 
+
+    $.ajax({
+        url: "https://api.wayblazer.com/v1/hotels/" + obj.hotels[8],
+        headers: headers,
+        data: jQuery.param({
+            adults: 2,
+            children: 0,
+            rooms: 1,
+            startDate: "2016-10-06",
+            endDate: "2016-10-10",
+            hotelProvider: "hotelscombined",
+            concepts: [],
+            getPricing: false
+        })
+    }).done(function(data){
+        $('span.activator:eq(4)').text("Britney | Shared price: $" + Math.round((data['accommodation']['lowestRate'] * 100)/100)/2)
+        $('span.hotel:eq(4)').text(data['accommodation']['hotelId'].split('_').join(' '))
+        $('.card-content:eq(4) p').text(data['accommodation']['summary'].substring(0, length) + ' ...')
+        $('span.price:eq(4)').text(Math.round(data['accommodation']['lowestRate'] * 100)/100);
+        $('.card-reveal:eq(4) img').attr('src', 'https://' + data['accommodation']['images'][2]['urls']['original'])
+        $('.card-reveal:eq(4) .address').text(data['accommodation']['attraction']['location']['formattedAddress'])
+        $('span.rating:eq(4)').text(data['accommodation']['attraction']['overallRating'])
+    })
+
+    $.ajax({
+        url: "https://api.wayblazer.com/v1/hotels/" + obj.hotels[9],
+        headers: headers,
+        data: jQuery.param({
+            adults: 2,
+            children: 0,
+            rooms: 1,
+            startDate: "2016-10-06",
+            endDate: "2016-10-10",
+            hotelProvider: "hotelscombined",
+            concepts: [],
+            getPricing: false
+        })
+    }).done(function(data){
+        $('span.activator:eq(5)').text("Davis & Angela | Shared price: $" + Math.round((data['accommodation']['lowestRate'] * 100)/100)/2)
+        $('span.hotel:eq(5)').text(data['accommodation']['hotelId'].split('_').join(' '))
+        $('.card-content:eq(5) p').text(data['accommodation']['summary'].substring(0, length) + ' ...')
+        $('span.price:eq(5)').text(Math.round(data['accommodation']['lowestRate'] * 100)/100);
+        $('.card-reveal:eq(5) img').attr('src', 'https://' + data['accommodation']['images'][2]['urls']['original'])
+        $('.card-reveal:eq(5) .address').text(data['accommodation']['attraction']['location']['formattedAddress'])
+        $('span.rating:eq(5)').text(data['accommodation']['attraction']['overallRating'])
+    })
+
 });
