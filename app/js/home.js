@@ -73,11 +73,14 @@ $(function() {
             getPricing: false
         })
     }).done(function(data){
+        console.log(data);
         $('.card-image:eq(0) img').attr('src', 'https://' + data['accommodation']['images'][0]['urls']['original'])
         $('span.activator:eq(0)').text(data['accommodation']['hotelId'].split('_').join(' '))
+        $('span.hotel:eq(0)').text(data['accommodation']['hotelId'].split('_').join(' '))
         $('.card-content:eq(0) p').text(data['accommodation']['summary'].substring(0, length) + ' ...')
         $('span.price:eq(0)').text(Math.round(data['accommodation']['lowestRate'] * 100)/100);
-        // console.log(data['accommodation']['lowestRate']);
+        $('.card-reveal:eq(0) p').text(data['accommodation']['summary'])
+        $('.card-reveal:eq(0) .address').text(data['accommodation']['attraction']['location']['formattedAddress'])
     })
 
     $.ajax({
@@ -96,8 +99,11 @@ $(function() {
     }).done(function(data){
         $('.card-image:eq(1) img').attr('src', 'https://' + data['accommodation']['images'][0]['urls']['original'])
         $('span.activator:eq(1)').text(data['accommodation']['hotelId'].split('_').join(' '))
+        $('span.hotel:eq(1)').text(data['accommodation']['hotelId'].split('_').join(' '))
         $('.card-content:eq(1) p').text(data['accommodation']['summary'].substring(0, length) + ' ...')
         $('span.price:eq(1)').text(Math.round(data['accommodation']['lowestRate'] * 100)/100);
+        $('.card-reveal:eq(1) p').text(data['accommodation']['summary'])
+        $('.card-reveal:eq(1) .address').text(data['accommodation']['attraction']['location']['formattedAddress'])
     })      
    
     $.ajax({
@@ -116,8 +122,11 @@ $(function() {
     }).done(function(data){
         $('.card-image:eq(2) img').attr('src', 'https://' + data['accommodation']['images'][2]['urls']['original'])
         $('span.activator:eq(2)').text(data['accommodation']['hotelId'].split('_').join(' '))
+        $('span.hotel:eq(2)').text(data['accommodation']['hotelId'].split('_').join(' '))
         $('.card-content:eq(2) p').text(data['accommodation']['summary'].substring(0, length) + ' ...')
         $('span.price:eq(2)').text(Math.round(data['accommodation']['lowestRate'] * 100)/100);
+        $('.card-reveal:eq(2) p').text(data['accommodation']['summary'])
+        $('.card-reveal:eq(2) .address').text(data['accommodation']['attraction']['location']['formattedAddress'])
     })
 
 });
