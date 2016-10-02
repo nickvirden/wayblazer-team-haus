@@ -33,111 +33,108 @@
 </head>
 
 <body>
+  <div class="container">
 
-  <header class="listing-header">
-    <p class="listing-title"><img class="listing-keen-logo"/><span id="keen">Keen</span><span id="luxury">Share the luxury</span></p>
+    <header class="listing-header">
+      <p class="listing-title"><img class="listing-keen-logo"/><span id="keen">Keen</span><span id="luxury">Share the luxury</span></p>
 
-    <p id="create-listing">Create Listing</p>
-  </header>
+      <p id="create-listing">Create Listing</p>
+    </header>
 
-  <div class="row" id="spots-available">
-      <p class="col s3">Spots Available</p>
+    <div class="row" id="spots-available">
+        <p class="col s3">Spots Available</p>
+        <select class="col s3 dropdown">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+    </div>
+
+    <div class="row col s6" id="dates">
+      <p class="col s1">Dates</p>
+      <div class="col s1"><input type="date" class="datepicker"></div>
+      <div class="col s1"><input type="date" class="datepicker"></div>
+
+      <form class="col s6">
+        <p class="col s2">
+          <input name="public" type="radio" /><label>Public</label>
+        </p>
+        <p class="col s1">
+          <input name="invite" type="radio" /><label>Invite Only</label>
+        </p>
+      </form>
+    </div>
+
+    <div class="row" id="roommates">
+      <p class="col s7">Roommate Requirements</p>
+      <p class="col s3">Invite Others</p>
+    </div>
+
+    <div class="row">
+      <p class="col s3">Age</p>
       <select class="col s3 dropdown">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
       </select>
-  </div>
-
-  <div class="row" id="dates">
-    <p class="col s3">Dates</p>
-    <div class="col s3">
-        <input type="date" class="datepicker">
-    </div>
-    <div class="col s3">
-        <input type="date" class="datepicker">
-    </div>
-
-      <form action="#">
-      <p class="col s3">
-        <input name="public" type="radio" />
-        <label for="test1">Public</label>
-      </p>
-      <p class="col s3">
-        <input name="invite" type="radio" />
-        <label for="test2">Invite Only</label>
-      </p>
-    </form>
-  </div>
-
-  <div class="row" id="roommates">
-    <p class="col s3">Roommate Requirements</p>
-    <p class="col s7">Invite Others</p>
-  </div>
-
-  <div class="row" id="roommates">
-    <p class="col s3">Age</p>
-    <select class="col s3 dropdown">
-      <option value="21">21</option>
-      <option value="22">22</option>
-      <option value="23">23</option>
-      <option value="24">24</option>
-      <option value="25">25</option>
-    </select>
-  </br>
-    <select class="col s3 dropdown">
-      <option value="21">21</option>
-      <option value="22">22</option>
-      <option value="23">23</option>
-      <option value="24">24</option>
-      <option value="25">25</option>
-    </select>
-
-      <input class="col s3" type="button" name="name" value="">
-      <button type="button" name="button">+</button>
-  </div>
-
-  <div class="row" id="gender">
-      <p>Gender</p>
-      <select  class="dropdown">
-        <option value="Female">Female</option>
-        <option value="Male">Male</option>
+    </br>
+      <select class="col s3 dropdown">
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
       </select>
-  </div>
 
-  <div class="row" id="req-list">
-    <ul class="col s3">
-      <li><input type="checkbox" id="test5" />
-      <label for="test5">No Smoking</label></li>
-      <li><input type="checkbox" id="test5" />
-      <label for="test5">Doesn't stay up late</label></li>
-      <li><input type="checkbox" id="test5" />
-      <label for="test5">Doesn't get up early</label></li>
-    </ul>
+        <input class="col s3" type="button" name="name" value="">
+        <button type="button" name="button">+</button>
+    </div>
 
-    <ul class="col s3">
-      <li><input type="checkbox" id="test5" />
-      <label for="test5">Single travelers only</label></li>
-      <li><input type="checkbox" id="test5" />
-      <label for="test5">wants to...</label></li>
-      <li><input type="checkbox" id="test5" />
-      <label for="test5">wants to...</label></li>
-    </ul>
+    <div class="row" id="gender">
+        <p>Gender</p>
+        <select  class="dropdown">
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+        </select>
+    </div>
 
-    <ul class="col s3">
-      <li><input type="checkbox" id="test5" />
-      <label for="test5">Single travelers only</label></li>
-      <li><input type="checkbox" id="test5" />
-      <label for="test5">wants to...</label></li>
-      <li><input type="checkbox" id="test5" />
-      <label for="test5">wants to...</label></li>
-    </ul>
-  </div>
+    <div class="row" id="req-list">
+      <ul class="col s3">
+        <li><input type="checkbox" id="test5" />
+        <label for="test5">No Smoking</label></li>
+        <li><input type="checkbox" id="test5" />
+        <label for="test5">Doesn't stay up late</label></li>
+        <li><input type="checkbox" id="test5" />
+        <label for="test5">Doesn't get up early</label></li>
+      </ul>
 
-  <div class="row" id="button">
-    <button type="submit" name="submit">Create Listing</button>
+      <ul class="col s3">
+        <li><input type="checkbox" id="test5" />
+        <label for="test5">Single travelers only</label></li>
+        <li><input type="checkbox" id="test5" />
+        <label for="test5">wants to...</label></li>
+        <li><input type="checkbox" id="test5" />
+        <label for="test5">wants to...</label></li>
+      </ul>
+
+      <ul class="col s3">
+        <li><input type="checkbox" id="test5" />
+        <label for="test5">Single travelers only</label></li>
+        <li><input type="checkbox" id="test5" />
+        <label for="test5">wants to...</label></li>
+        <li><input type="checkbox" id="test5" />
+        <label for="test5">wants to...</label></li>
+      </ul>
+    </div>
+
+    <div class="row" id="button">
+      <button type="submit" name="submit">Create Listing</button>
+    </div>
+
   </div>
 
     <!-- <nav>

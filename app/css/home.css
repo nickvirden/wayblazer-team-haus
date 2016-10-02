@@ -67,3 +67,8 @@ nav, .chip, footer.page-footer {
   height: 30px;
   width: 70px;
 }
+
+#roommates {
+  font-weight: 600;
+  font-size: 20px;
+}
