@@ -63,12 +63,23 @@ nav, .chip, footer.page-footer {
 }
 
 .dropdown {
-  background-color: #f2f2f2;
+  background-color: #C0BEBE;
   height: 50px;
   width: 15px;
+  border-radius: 10px;
 }
 
 #roommates {
   font-weight: 600;
   font-size: 20px;
+}
+
+#listing-button {
+  display: block;
+  padding: 10px 30px;
+  background-color: #ff6e27;
+  font-weight: 600;
+  border-radius: 10px;
+  margin: auto;
+  width: 50%;
 }
