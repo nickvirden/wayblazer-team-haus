@@ -22,7 +22,7 @@ nav, .chip, footer.page-footer {
 }
 
 .listing-title {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
   color: #4a4a4a;
 }
 
@@ -31,14 +31,21 @@ nav, .chip, footer.page-footer {
   height: 100px;
   width: 100px;
   background-size: contain;
+  margin: 10px;
+  display: inline-block;
 }
 
 #keen {
+  display: inline-block;
   font-weight: bold;
   font-size: 30px;
+  margin: 10px;
 }
 
 #luxury {
-  font-size: 24px;
+  display: inline-block;
+  font-weight: lighter;
+  font-size: 22px;
   font-style: italic;
+  font-family: "Times New Roman", Times, serif;
 }
