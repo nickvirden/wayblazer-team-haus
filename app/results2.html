@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Timezone-->
+    <meta charset="utf-8">
+    <!--IE Edge Optimized-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Mobile Optimized-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Hotel Split</title>
+
+    <!--Materialize UI-->
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+    <!-- MaterializeCSS -->
+    <link href="../bower_components/materialize/dist/css/materialize.min.css" rel="stylesheet">
+
+    <!--Bootstrap Social & Font Awesome -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+    <link rel="stylesheet" href="../bower_components/jquery-typeahead/dist/jquery.typeahead.min.css">
+    <!-- Proprietary Styling -->
+    <link href="css/home.css" rel="stylesheet">
+
+    <!-- EmojiOne -->
+    <link href="https://cdn.jsdelivr.net/emojione/2.2.6/assets/css/emojione.min.css"/ rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="listing-header" style="position: relative; top: 0; left: 0;">
+    </div>
+
+    <div id="content">
+        <div class="container">
+              <form id="form-country_v1" name="form-country_v1">
+                  <div class="typeahead__container">
+                      <div class="typeahead__field">
+                          <span class="typeahead__query">
+                              <div class="row">
+                                <div class="input-field col s4">
+                                  <input placeholder="Destination" id="first_name" type="text" class="validate search">
+                                </div>
+                                <div class="input-field col s2">
+                                  <input id="last_name" type="text" class="validate" placeholder="Start Date">
+                                </div>
+                                <div class="input-field col s2">
+                                  <input id="last_name" type="text" class="validate" placeholder="End Date">
+                                </div>
+                                <div class="input-field col s2">
+                                  <input id="last_name" type="text" class="validate" placeholder="1 Room">
+                                </div>
+                                <div class="input-field col s2">
+                                  <input id="last_name" type="text" class="validate" placeholder="2 Adults">
+                                </div>
+                              </div>
+                          </span>
+                      </div>
+                  </div>
+              </form>
+
+            </div>
+
+        <div class="row center">
+            <a href="newlisting.html" id="button" class="btn-large waves-effect waves-light orange" style="border-radius: 50%; width: 100px; height: 100px;">
+                <img src="images/keen_logo_3.png" style="width: 100px; height: 100px; margin-left: -30px;">
+            </a>
+        </div>
+        <div class="row center">
+            <a href="" class="btn-large waves-effect waves-light blue">Night Life</a>
+            <a href="" class="btn-large waves-effect waves-light blue">Massage</a>
+            <a href="" class="btn-large waves-effect waves-light blue">Golf Course</a>
+            <a href="" class="btn-large waves-effect waves-light blue">Kayaking</a>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col s6">
+            <h3 class="center">Hotels</h3>
+            <div class="row">
+                <div class="col s12">
+                    <div class="card large">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/bellagio.jpg">
+                            <span class="card-title activator">HOTEL</span>
+                        </div>
+                        <div class="card-content">
+                            <p>This is some info about the hotel.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="newlisting.html">Create New Listing</a>
+                            <div class="chip white-text">
+                                <img src="images/five.png" alt="Rooms Available">Available Rooms</div>
+                                <span>Lowest price: $<span class="price">50</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title hotel grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <span class="address"></span><i class="fa fa-star" aria-hidden="true" style="margin: 0 5px 0 15px;"></i><span class="rating"></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            <div class="row col s12 center">
+                                <div class="card-action" style="display: flex; justify-content: space-around;">
+                                    <a href="newlisting.html" class="waves-effect waves-light btn large">Create Listing</a>
+                                    <a class="waves-effect waves-light btn large">View Current Listing</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div class="card large">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/bellagio.jpg">
+                                <span class="card-title activator">HOTEL</span>
+                            </div>
+                            <div class="card-content">
+                                <p>This is some info about the hotel.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="newlisting.html">Create New Listing</a>
+                                <div class="chip white-text">
+                                    <img src="images/five.png" alt="Rooms Available">Available Rooms</div>
+                                    <span>Lowest price: $<span class="price">50</span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title hotel grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                <span class="address"></span><i class="fa fa-star" aria-hidden="true" style="margin: 0 5px 0 15px;"></i><span class="rating"></span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                <div class="row col s12 center">
+                                    <div class="card-action" style="display: flex; justify-content: space-around;">
+                                        <a href="newlisting.html" class="waves-effect waves-light btn large">Create Listing</a>
+                                        <a class="waves-effect waves-light btn large">View Current Listing</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div class="card large">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/bellagio.jpg">
+                                <span class="card-title activator">HOTEL</span>
+                            </div>
+                            <div class="card-content">
+                                <p>This is some info about the hotel.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="newlisting.html">Create New Listing</a>
+                                <div class="chip white-text">
+                                    <img src="images/five.png" alt="Rooms Available">Available Rooms</div>
+                                    <span>Lowest price: $<span class="price">50</span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title hotel grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                <span class="address"></span><i class="fa fa-star" aria-hidden="true" style="margin: 0 5px 0 15px;"></i><span class="rating"></span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                <div class="row col s12 center">
+                                    <div class="card-action" style="display: flex; justify-content: space-around;">
+                                        <a href="newlisting.html" class="waves-effect waves-light btn large">Create Listing</a>
+                                        <a class="waves-effect waves-light btn large">View Current Listing</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <h3 class="center">Roommate</h3>
+            <div class="row">
+               <div class="col s12">
+                    <div class="card large">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/guy.jpg">
+                            <span class="card-title activator">PERSON</span>
+                        </div>
+                        <div class="card-content">
+                            <p>This is some info about the listing.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Book & Split Now</a>
+                            <div class="chip white-text">
+                                <img src="images/five.png" alt="Rooms Available">Spaces Available</div>
+                                <span>Original price: $<span class="price">50</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title hotel grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <span class="address"></span><i class="fa fa-star" aria-hidden="true" style="margin: 0 5px 0 15px;"></i><span class="rating"></span>
+                            <img src="" alt="" height="275" width="650">
+                            <ul>
+                                <li style="display: inline; padding-left: 10px;">- Non-Smoker</li>
+                                <li style="display: inline; padding-left: 10px;">- Herbivore</li>
+                                <li style="display: inline; padding-left: 10px;">- Early Bird</li>
+                            </ul>
+                            <div class="row col s12 center">
+                                <div class="card-action" style="display: flex; justify-content: space-around;">
+                                    <a class="waves-effect waves-light btn large">View Listing</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="card large">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="https://static.pexels.com/photos/108036/pexels-photo-108036-large.jpeg">
+                            <span class="card-title activator">PERSON</span>
+                        </div>
+                        <div class="card-content">
+                            <p>This is some info about the listing.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Book & Split Now</a>
+                            <div class="chip white-text">
+                                <img src="images/five.png" alt="Rooms Available">Spaces Available</div>
+                                <span>Lowest price: $<span class="price">50</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title hotel grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <span class="address"></span><i class="fa fa-star" aria-hidden="true" style="margin: 0 5px 0 15px;"></i><span class="rating"></span>
+                            <img src="" alt="" height="275" width="650">
+                            <ul>
+                                <li style="display: inline; padding-left: 10px;">- Night Owl</li>
+                                <li style="display: inline; padding-left: 10px;">- Single Travelers Only</li>
+                                <li style="display: inline; padding-left: 10px;">- Smoker</li>
+                            </ul>
+                            <div class="row col s12 center">
+                                <div class="card-action" style="display: flex; justify-content: space-around;">
+                                    <a class="waves-effect waves-light btn large">View Listing</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="card large">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="https://static.pexels.com/photos/29353/pexels-photo-29353-large.jpg">
+                            <span class="card-title activator">PERSON</span>
+                        </div>
+                        <div class="card-content">
+                            <p>This is some info about the listing.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Book & Split Now</a>
+                            <div class="chip white-text">
+                                <img src="images/five.png" alt="Rooms Available">Spaces Available</div>
+                                <span>Lowest price: $<span class="price">50</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title hotel grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <span class="address"></span><i class="fa fa-star" aria-hidden="true" style="margin: 0 5px 0 15px;"></i><span class="rating"></span>
+                            <img src="" alt="" height="275" width="650">
+                            <ul>
+                                <li style="display: inline; padding-left: 10px;">- Non-Smoker</li>
+                                <li style="display: inline; padding-left: 10px;">- Couples Only</li>
+                                <li style="display: inline; padding-left: 10px;">- Pescatarian</li>
+                            </ul>
+                            <div class="row col s12 center">
+                                <div class="card-action" style="display: flex; justify-content: space-around;">
+                                    <a class="waves-effect waves-light btn large">View Listing</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="card large">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="https://assets.about.me/background/users/t/a/r/tarzansharif_1402129737_28.jpg">
+                            <span class="card-title activator">Tarzan | $78.50</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Boasting a Jacuzzi, an outdoor pool and free Wi-Fi, Wyndham Garden Hotel Austin is situated in Austin and offers comfortable accommodation. There is also a fitness centre with cardiovascular equipment ...</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Book & Split Now</a>
+                            <div class="chip white-text">
+                                <img src="images/five.png" alt="Rooms Available">Spaces Available</div>
+                                <span>Lowest price: $<span class="price">78.50</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title hotel grey-text text-darken-4">Wyndham Garden Hotel Austin<i class="material-icons right">close</i></span>
+                            <span class="address"></span><i class="fa fa-star" aria-hidden="true" style="margin: 0 5px 0 15px;"></i><span class="rating"></span>
+                            <img src="" alt="" height="275" width="650">
+                            <ul>
+                                <li style="display: inline; padding-left: 10px;">- Early Bird</li>
+                                <li style="display: inline; padding-left: 10px;">- Herbivore</li>
+                                <li style="display: inline; padding-left: 10px;">- Non-Smoker</li>
+                            </ul>
+                            <div class="row col s12 center">
+                                <div class="card-action" style="display: flex; justify-content: space-around;">
+                                    <a class="waves-effect waves-light btn large">View Listing</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">keen</h5>
+                    <p class="grey-text text-lighten-4">When you're looking for a hotel, but can't afford the full price of a room, we've got you covered.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Looking for Something?</h5>
+                    <ul>
+                        <li><a class="white-text">Contact Us</a></li>
+                        <li><a class="white-text">FAQ</a></li>
+                        <li><a class="white-text">Who We Are</a></li>
+                        <li><a class="white-text">Our Office</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 keen
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
+
+    <!-- Custom JS files -->
+    <!-- These should ALWAYS come after your downloaded packages -->
+    <script src="js/home.js"></script>
+
+    <!-- Materialize JS & jQuery -->
+    <script src="../bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script src="../bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../bower_components/jquery-validation/dist/additional-methods.min.js"></script>
+
+    <!-- Emoji One -->
+    <script src="https://cdn.jsdelivr.net/emojione/2.2.6/lib/js/emojione.min.js"></script>
+
+    <!--One Page Scroll-->
+    <!--script src="https://kswedberg.github.io/jquery-smooth-scroll/lib/jquery/jquery.js"></script>
+    <script src="<script src="https://kswedberg.github.io/jquery-smooth-scroll/src/jquery.smooth-scroll.js"></script-->
+
+</body>
+
+</html>
