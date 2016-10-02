@@ -41,7 +41,7 @@ $(function() {
                 }
             });
         });
-    })
+    });
 
     $('#button').on('click', function(e) {
         localStorage.clear();
@@ -133,11 +133,3 @@ $(function() {
     })
 
 });
-
-
-
-
-
-
-
-
