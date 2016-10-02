@@ -61,14 +61,25 @@ h3, .brand-logo, h5 {
 }
 
 
-
 .dropdown {
-  background-color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.1);
   height: 50px;
   width: 15px;
+  border-radius: 10px;
 }
 
 #roommates {
   font-weight: 600;
   font-size: 20px;
+}
+
+#listing-button {
+    display: block;
+    background-color: #ff6e27;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    font-family: 'Lobster', cursive;
+    
 }

@@ -2,22 +2,22 @@ $(function() {
 
     function hotels(data) {
         return JSON.parse(data);
-    }     
-    
+    }
+
     // Materialize nav bar on mobile
     $(".button-collapse").sideNav();
-    
+
     // Materialize select dropdown
     $('select').material_select();
-    
+
     // Materialize date picker
     $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
         selectYears: 15, // Creates a dropdown of 15 years to control year
-        format: "mmmm dd, yyyy"
+        format: "mmm dd, yyyy"
     });
-    
-    
+
+
     // API Stuff
     var headers = {
         'cache-control': 'no-cache',
@@ -106,8 +106,8 @@ $(function() {
         $('.card-reveal:eq(1) p').text(data['accommodation']['summary'])
         $('.card-reveal:eq(1) .address').text(data['accommodation']['attraction']['location']['formattedAddress'])
         $('span.rating:eq(1)').text(data['accommodation']['attraction']['overallRating'])
-    })      
-   
+    })
+
     $.ajax({
         url: "https://api.wayblazer.com/v1/hotels/" + obj.hotels[6],
         headers: headers,
