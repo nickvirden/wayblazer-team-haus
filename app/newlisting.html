@@ -36,11 +36,13 @@
 
   <header class="listing-header">
     <p class="listing-title"><img class="listing-keen-logo"/><span id="keen">Keen</span><span id="luxury">Share the luxury</span></p>
+
+    <p id="create-listing">Create Listing</p>
   </header>
 
   <div class="row" id="spots-available">
-      <p>Spots Available</p>
-      <select>
+      <p class="col s3">Spots Available</p>
+      <select class="col s3 dropdown">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -50,7 +52,7 @@
   </div>
 
   <div class="row" id="dates">
-    <p>Dates</p>
+    <p class="col s3">Dates</p>
     <div class="col s3">
         <input type="date" class="datepicker">
     </div>
@@ -71,33 +73,35 @@
   </div>
 
   <div class="row" id="roommates">
-    <p>Roommate Requirements</p>
-      <p>Age</p>
-      <select class="col s3">
-        <option value="21">21</option>
-        <option value="22">22</option>
-        <option value="23">23</option>
-        <option value="24">24</option>
-        <option value="25">25</option>
-      </select>
-    </br>
-      <select class="col s3">
-        <option value="21">21</option>
-        <option value="22">22</option>
-        <option value="23">23</option>
-        <option value="24">24</option>
-        <option value="25">25</option>
-      </select>
+    <p class="col s3">Roommate Requirements</p>
+    <p class="col s7">Invite Others</p>
+  </div>
 
-      <p>Invite Others</p>
+  <div class="row" id="roommates">
+    <p class="col s3">Age</p>
+    <select class="col s3 dropdown">
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+    </select>
+  </br>
+    <select class="col s3 dropdown">
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+    </select>
+
       <input class="col s3" type="button" name="name" value="">
       <button type="button" name="button">+</button>
   </div>
 
-
   <div class="row" id="gender">
       <p>Gender</p>
-      <select>
+      <select  class="dropdown">
         <option value="Female">Female</option>
         <option value="Male">Male</option>
       </select>
