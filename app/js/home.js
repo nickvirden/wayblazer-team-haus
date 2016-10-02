@@ -11,6 +11,9 @@ $(function() {
         'x-api-key': '5iR9qzkC5JEvaHT5ILvR6xeymFBQpCV2'
     };
 
+    // truncate string
+    var length = 200;
+
     $('.js-typeahead-country_v1').on('keyup', function() {
         var input = $(this).val();
         $.ajax({
@@ -27,7 +30,7 @@ $(function() {
         })
     })
 
-    $('.btn').on('click', function(e) {
+    $('button').on('click', function(e) {
         localStorage.clear();
         e.preventDefault();
         var input = $('.js-typeahead-country_v1').val();
@@ -42,5 +45,79 @@ $(function() {
     })
 
     var obj = hotels(localStorage.getItem('data'));
+    
+    // $('span.activator:eq(0)').text(obj.hotels[0].split('_').join(' '))
+    // $('span.activator:eq(1)').text(obj.hotels[1].split('_').join(' '))
+    // $('span.activator:eq(2)').text(obj.hotels[2].split('_').join(' '))
+    // $('span.activator:eq(3)').text(obj.hotels[3].split('_').join(' '))
+    // $('span.activator:eq(4)').text(obj.hotels[4].split('_').join(' '))
+    // $('span.activator:eq(5)').text(obj.hotels[5].split('_').join(' '))
+    // $('span.activator:eq(6)').text(obj.hotels[6].split('_').join(' '))
+
+    $.ajax({
+        url: "https://api.wayblazer.com/v1/hotels/" + obj.hotels[0],
+        headers: headers,
+        data: jQuery.param({
+            adults: 2,
+            children: 0,
+            rooms: 1,
+            startDate: "2016-10-06",
+            endDate: "2016-10-10",
+            hotelProvider: "hotelscombined",
+            concepts: [],
+            getPricing: false
+        })
+    }).done(function(data){
+        $('.card-image:eq(0) img').attr('src', 'https://' + data['accommodation']['images'][0]['urls']['original'])
+        $('span.activator:eq(0)').text(data['accommodation']['hotelId'].split('_').join(' '))
+        $('.card-content:eq(0) p').text(data['accommodation']['summary'].substring(0, length) + ' ...')
+        console.log(data['accommodation']);
+    })
+
+    $.ajax({
+        url: "https://api.wayblazer.com/v1/hotels/" + obj.hotels[1],
+        headers: headers,
+        data: jQuery.param({
+            adults: 2,
+            children: 0,
+            rooms: 1,
+            startDate: "2016-10-06",
+            endDate: "2016-10-10",
+            hotelProvider: "hotelscombined",
+            concepts: [],
+            getPricing: false
+        })
+    }).done(function(data){
+        $('.card-image:eq(1) img').attr('src', 'https://' + data['accommodation']['images'][0]['urls']['original'])
+        $('span.activator:eq(1)').text(data['accommodation']['hotelId'].split('_').join(' '))
+        $('.card-content:eq(1) p').text(data['accommodation']['summary'].substring(0, length) + ' ...')
+    })      
+   
+    $.ajax({
+        url: "https://api.wayblazer.com/v1/hotels/" + obj.hotels[6],
+        headers: headers,
+        data: jQuery.param({
+            adults: 2,
+            children: 0,
+            rooms: 1,
+            startDate: "2016-10-06",
+            endDate: "2016-10-10",
+            hotelProvider: "hotelscombined",
+            concepts: [],
+            getPricing: false
+        })
+    }).done(function(data){
+        $('.card-image:eq(2) img').attr('src', 'https://' + data['accommodation']['images'][2]['urls']['original'])
+        $('span.activator:eq(2)').text(data['accommodation']['hotelId'].split('_').join(' '))
+        $('.card-content:eq(2) p').text(data['accommodation']['summary'].substring(0, length) + ' ...')
+    })
 
 });
+
+
+
+
+
+
+
+
