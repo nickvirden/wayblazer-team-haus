@@ -38,7 +38,7 @@ $(function() {
                 }
             });
         });
-    })
+    });
 
     $('.btn').on('click', function(e) {
         localStorage.clear();
