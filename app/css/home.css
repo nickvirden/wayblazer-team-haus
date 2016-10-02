@@ -10,5 +10,21 @@ h3, .brand-logo, h5 {
 }
 
 nav, .chip, footer.page-footer {
-   background-color: #ff6e27; 
+   background-color: #ff6e27;
+}
+
+.listing-header {
+  background-image: url('../images/room.png');
+  width: 100%;
+  height: 450px;
+  margin-top: 0px;
+}
+
+.listing-title {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.listing-keen-logo {
+  height: 100px;
+  width: 100px;
 }
