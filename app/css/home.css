@@ -1,0 +1,14 @@
+@import 'https://fonts.googleapis.com/css?family=Lobster';
+
+h3, .brand-logo {
+    font-family: 'Lobster', cursive;
+}
+
+.card-title.activator {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0 10px 0 0;
+}
+
+nav, .chip, footer.page-footer {
+   background-color: #ff6e27; 
+}
