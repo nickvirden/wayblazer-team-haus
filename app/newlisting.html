@@ -43,7 +43,7 @@
 
     <div class="row" id="spots-available">
         <p class="col s3">Spots Available</p>
-        <select class="col s3 dropdown">
+        <select class="col s1 dropdown">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -79,35 +79,42 @@
       <p class="col s3">Invite Others</p>
     </div>
 
-    <div class="col">
-      <div class="row">
+    <div class="row">
+      <div class="col s6">
         <p class="col s3">Age</p>
-        <select class="col s3 dropdown">
-          <option value="21">21</option>
-          <option value="22">22</option>
-          <option value="23">23</option>
-          <option value="24">24</option>
-          <option value="25">25</option>
-        </select>
-      </br>
-        <select class="col s3 dropdown">
-          <option value="21">21</option>
-          <option value="22">22</option>
-          <option value="23">23</option>
-          <option value="24">24</option>
-          <option value="25">25</option>
-        </select>
+          <div class="row">
+            <div class="col6">
+              <select class="col s2 push-s1 dropdown">
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+              </select>
+            </div>
+            <div class="col6">
+              <select class="col s2 push-s2 dropdown">
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+              </select>
+            </div>
+          </div>
       </div>
 
-      <div class="row">
-          <input class="col s3" type="button" name="name" value="">
-          <button type="button" name="button">+</button>
+      <div class="col s6">
+        <div class="row s6">
+          <input class="col s6" type="button" name="name" value="Enter Email">
+          <button class="col s1 push-s1" type="button" name="button">+</button>
+        </div>
       </div>
     </div>
 
     <div class="row" id="gender">
         <p>Gender</p>
-        <select  class="dropdown">
+        <select class="col s2 dropdown">
           <option value="Female">Female</option>
           <option value="Male">Male</option>
         </select>
