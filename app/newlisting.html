@@ -106,14 +106,14 @@
 
       <div class="col s6">
         <div class="row s6">
-          <input class="col s6" type="button" name="name" value="Enter Email">
+          <input class="col s6" type="text" name="name" value="Enter Email">
           <button class="col s1 push-s1" type="button" name="button">+</button>
         </div>
       </div>
     </div>
 
     <div class="row" id="gender">
-        <p>Gender</p>
+        <p class="col s2">Gender</p>
         <select class="col s2 dropdown">
           <option value="Female">Female</option>
           <option value="Male">Male</option>
@@ -121,36 +121,36 @@
     </div>
 
     <div class="row" id="req-list">
-      <ul class="col s3">
-        <li><input type="checkbox" id="test5" />
-        <label for="test5">No Smoking</label></li>
-        <li><input type="checkbox" id="test5" />
-        <label for="test5">Doesn't stay up late</label></li>
-        <li><input type="checkbox" id="test5" />
-        <label for="test5">Doesn't get up early</label></li>
+      <ul class="col s4">
+        <li><input type="checkbox" />
+        <label >No Smoking</label></li>
+        <li><input type="checkbox"/>
+        <label >Doesn't stay up late</label></li>
+        <li><input type="checkbox"/>
+        <label >Doesn't get up early</label></li>
       </ul>
 
-      <ul class="col s3">
-        <li><input type="checkbox" id="test5" />
-        <label for="test5">Single travelers only</label></li>
-        <li><input type="checkbox" id="test5" />
-        <label for="test5">wants to...</label></li>
-        <li><input type="checkbox" id="test5" />
-        <label for="test5">wants to...</label></li>
+      <ul class="col s4">
+        <li><input type="checkbox"/>
+        <label >Single travelers only</label></li>
+        <li><input type="checkbox"/>
+        <label >wants to...</label></li>
+        <li><input type="checkbox"/>
+        <label >wants to...</label></li>
       </ul>
 
-      <ul class="col s3">
-        <li><input type="checkbox" id="test5" />
-        <label for="test5">Single travelers only</label></li>
-        <li><input type="checkbox" id="test5" />
-        <label for="test5">wants to...</label></li>
-        <li><input type="checkbox" id="test5" />
-        <label for="test5">wants to...</label></li>
+      <ul class="col s4">
+        <li><input type="checkbox" name="single" value="single"/>
+        <label>wants to...</label></li>
+        <li><input type="checkbox"/>
+        <label >wants to...</label></li>
+        <li><input type="checkbox"/>
+        <label >wants to...</label></li>
       </ul>
     </div>
 
-    <div class="row" id="button">
-      <button type="submit" name="submit">Create Listing</button>
+    <div class="row">
+      <button id="listing-button" type="submit" name="submit">Create Listing</button>
     </div>
 
   </div>
