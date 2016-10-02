@@ -22,6 +22,7 @@
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
     <link rel="stylesheet" href="../bower_components/jquery-typeahead/dist/jquery.typeahead.min.css">
+    
     <!-- Proprietary Styling -->
     <link href="css/home.css" rel="stylesheet">
 
@@ -52,8 +53,7 @@
                 </div>
                 <div class="col s12"></div>
             </div>
-        </div>
-        
+        </div> 
         
     </div>
     <ul id="nav-mobile" class="right hide">
@@ -64,130 +64,132 @@
     <div class="listing-header" style="position: relative; top: 0; left: 0;">
     </div>
     
-    <div class="row">
-        <div class="col s8 push-s2">
-
-        <div class="row" id="spots-available">
-        <p class="col s3">Spots Available</p>
-        <select class="col s1 dropdown">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-    </div>
-
-    <div class="row" id="dates">
-      <div class="col s6">
+    <div id="content">
         <div class="row">
-          <p class="col s1">Dates</p>
-          <div class="col s4 push-s1"><input type="date" class="datepicker"></div>
-          <p class="col s1 push-s1">to</p>
-          <div class="col s4 push-s1"><input type="date" class="datepicker"></div>
+            <div class="col s8 push-s2">
+
+            <div class="row" id="spots-available">
+            <p class="col s3">Spots Available</p>
+            <select class="col s1 dropdown">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
         </div>
-      </div>
 
-      <form class="col s6">
-        <div class="row">
-            <div class="switch col s3">
-                <label style="margin-left: 12%; font-size: 15px; color: black;">Public</label>
-                <label>
-                  <input type="checkbox">
-                  <span class="lever"></span>
-                </label>
-            </div>
-            <div class="switch col s3">
-                <label style="margin-left: 12%; font-size: 15px; color: black;">Invite Only</label>
-                <label>
-                  <input type="checkbox">
-                  <span class="lever"></span>
-                </label>
-            </div>
-        </form>
-    </div>
-
-    <div class="row" id="roommates">
-      <p class="col s7">Roommate Requirements</p>
-      <p class="col s3">Invite Others</p>
-    </div>
-
-    <div class="row">
-      <div class="col s6">
-        <p class="col s3">Age</p>
-          <div class="row">
-            <div class="col6">
-              <select class="col s2 push-s1 dropdown">
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-              </select>
-            </div>
-            <div class="col6">
-              <select class="col s2 push-s2 dropdown">
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-              </select>
+        <div class="row" id="dates">
+          <div class="col s6">
+            <div class="row">
+              <p class="col s1">Dates</p>
+              <div class="col s4 push-s1"><input type="date" class="datepicker"></div>
+              <p class="col s1 push-s1">to</p>
+              <div class="col s4 push-s1"><input type="date" class="datepicker"></div>
             </div>
           </div>
-      </div>
 
-        <div class="col s5">
-              <div class="input-field">
-                <input id="email" type="text" name="email">
-                <label for="email">Email</label>
-              </div>
+          <form class="col s6">
+            <div class="row">
+                <div class="switch col s3">
+                    <label style="margin-left: 12%; font-size: 15px; color: black;">Public</label>
+                    <label>
+                      <input type="checkbox">
+                      <span class="lever"></span>
+                    </label>
+                </div>
+                <div class="switch col s3">
+                    <label style="margin-left: 12%; font-size: 15px; color: black;">Invite Only</label>
+                    <label>
+                      <input type="checkbox">
+                      <span class="lever"></span>
+                    </label>
+                </div>
+            </form>
         </div>
-        <a class="col s1 waves-effect waves-light btn" type="button" name="button" style="font-size: 30px; background-color: white; color: black;">+</a>
+
+        <div class="row" id="roommates">
+          <p class="col s7">Roommate Requirements</p>
+          <p class="col s3">Invite Others</p>
+        </div>
+
+        <div class="row">
+          <div class="col s6">
+            <p class="col s3">Age</p>
+              <div class="row">
+                <div class="col6">
+                  <select class="col s2 push-s1 dropdown">
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                  </select>
+                </div>
+                <div class="col6">
+                  <select class="col s2 push-s2 dropdown">
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                  </select>
+                </div>
+              </div>
+          </div>
+
+            <div class="col s5">
+                  <div class="input-field">
+                    <input id="email" type="text" name="email">
+                    <label for="email">Email</label>
+                  </div>
+            </div>
+            <a class="col s1 waves-effect waves-light btn" type="button" name="button" style="font-size: 30px; background-color: white; color: black;">+</a>
+        </div>
+
+        <div class="row" id="gender">
+            <p class="col s2">Gender</p>
+            <select class="col s2 dropdown">
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+            </select>
+        </div>
+
+        <div class="row" id="req-list">
+          <ul class="col s4">
+            <li><input type="checkbox"  id="test1"/>
+            <label for="test1">Non-Smoker</label></li>
+            <li><input type="checkbox" id="test2"/>
+            <label for="test2">Smoker</label></li>
+            <li><input type="checkbox" id="test3"/>
+            <label for="test3">Carnivore // Pescatarian</label></li>
+          </ul>
+
+          <ul class="col s4">
+            <li><input type="checkbox" id="test4"/>
+            <label for="test4">Herbivore</label></li>
+            <li><input type="checkbox" id="test5"/>
+            <label for="test5">Single Travelers Only</label></li>
+            <li><input type="checkbox" id="test6"/>
+            <label for="test6">Couples Only</label></li>
+          </ul>
+
+          <ul class="col s4">
+            <li><input type="checkbox" id="test7"/>
+            <label for="test7">Families Only</label></li>
+            <li><input type="checkbox" id="test8"/>
+            <label for="test8">Early Bird</label></li>
+            <li><input type="checkbox" id="test9"/>
+            <label for="test9">Night Owl</label></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <button id="listing-button" class="col s4 push-s4 white-text" type="submit" name="submit">Create Listing</button>
+        </div>
+
+      </div>
     </div>
-
-    <div class="row" id="gender">
-        <p class="col s2">Gender</p>
-        <select class="col s2 dropdown">
-          <option value="Female">Female</option>
-          <option value="Male">Male</option>
-        </select>
-    </div>
-
-    <div class="row" id="req-list">
-      <ul class="col s4">
-        <li><input type="checkbox"  id="test1"/>
-        <label for="test1">Non-Smoker</label></li>
-        <li><input type="checkbox" id="test2"/>
-        <label for="test2">Smoker</label></li>
-        <li><input type="checkbox" id="test3"/>
-        <label for="test3">Carnivore // Pescatarian</label></li>
-      </ul>
-
-      <ul class="col s4">
-        <li><input type="checkbox" id="test4"/>
-        <label for="test4">Herbivore</label></li>
-        <li><input type="checkbox" id="test5"/>
-        <label for="test5">Single Travelers Only</label></li>
-        <li><input type="checkbox" id="test6"/>
-        <label for="test6">Couples Only</label></li>
-      </ul>
-
-      <ul class="col s4">
-        <li><input type="checkbox" id="test7"/>
-        <label for="test7">Families Only</label></li>
-        <li><input type="checkbox" id="test8"/>
-        <label for="test8">Early Bird</label></li>
-        <li><input type="checkbox" id="test9"/>
-        <label for="test9">Night Owl</label></li>
-      </ul>
-    </div>
-
-    <div class="row">
-      <button id="listing-button" class="col s4 push-s4 white-text" type="submit" name="submit">Create Listing</button>
-    </div>
-
-  </div>
 
     <!-- jQuery -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
