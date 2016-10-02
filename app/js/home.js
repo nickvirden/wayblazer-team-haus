@@ -27,14 +27,14 @@ $(function() {
     // truncate string
     var length = 200;
 
-    $('.js-typeahead-country_v1').on('keyup', function() {
+    $('.search').on('keyup', function() {
         var input = $(this).val();
         $.ajax({
             url: "https://api.wayblazer.com/v1/typeahead?search=" + input,
             headers: headers
         }).done(function(data) {
             $.typeahead({
-                input: ".js-typeahead-country_v1",
+                input: ".search",
                 order: "asc",
                 source: {
                     data: data
@@ -43,10 +43,10 @@ $(function() {
         });
     })
 
-    $('button').on('click', function(e) {
+    $('#button').on('click', function(e) {
         localStorage.clear();
         e.preventDefault();
-        var input = $('.js-typeahead-country_v1').val();
+        var input = $('.search').val();
         input = input.split(',')[0].toLowerCase();
         $.ajax({
             url: "https://api.wayblazer.com/v1/destinations/detail?destination=place:" + input,
@@ -58,14 +58,6 @@ $(function() {
     });
 
     var obj = hotels(localStorage.getItem('data'));
-    
-    // $('span.activator:eq(0)').text(obj.hotels[0].split('_').join(' '))
-    // $('span.activator:eq(1)').text(obj.hotels[1].split('_').join(' '))
-    // $('span.activator:eq(2)').text(obj.hotels[2].split('_').join(' '))
-    // $('span.activator:eq(3)').text(obj.hotels[3].split('_').join(' '))
-    // $('span.activator:eq(4)').text(obj.hotels[4].split('_').join(' '))
-    // $('span.activator:eq(5)').text(obj.hotels[5].split('_').join(' '))
-    // $('span.activator:eq(6)').text(obj.hotels[6].split('_').join(' '))
 
     $.ajax({
         url: "https://api.wayblazer.com/v1/hotels/" + obj.hotels[0],
