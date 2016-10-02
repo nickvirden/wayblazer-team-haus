@@ -105,8 +105,6 @@ $(function() {
         $('span.price:eq(1)').text(Math.round(data['accommodation']['lowestRate'] * 100)/100);
         $('.card-reveal:eq(1) p').text(data['accommodation']['summary'])
         $('.card-reveal:eq(1) .address').text(data['accommodation']['attraction']['location']['formattedAddress'])
-    })
-
         $('span.rating:eq(1)').text(data['accommodation']['attraction']['overallRating'])
     })
 
