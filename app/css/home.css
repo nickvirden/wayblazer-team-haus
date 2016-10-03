@@ -7,7 +7,7 @@ body {
   letter-spacing: 1px;
 }
 
-h3, .brand-logo, h5 {
+h3, .brand-logo, h5, .title {
     font-family: 'Lobster', cursive;
 }
 
@@ -16,10 +16,65 @@ h3, .brand-logo, h5 {
     border-radius: 0 10px 0 0;
 }
 
+.name-of-guy {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0 10px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0 10px 0 0;
+    font-size: 24px;
+    font-weight: 300;
+    width: 100%;
+}
+
 /* Results */
+
+.row.demo {
+    margin-bottom: 0;
+}
+
+.card {
+    min-height: 180px;
+}
 
 .chip, footer.page-footer {
    background-color: #ff6e27;
+}
+
+.card-image-not {
+    display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.card-image-not img {
+    width: 100%;
+    height: 100%;
+}
+
+.title-container {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 1%;
+}
+
+.title {
+    background-color: #ff6e27;
+    color: white;
+    border-radius: 10px;
+    padding: 0 10px;
+    display: inline-block;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 2%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* New Listing */
